@@ -691,6 +691,9 @@ div.gBckdf.forge-page.anvil-webform-page,
   ) {
   background-color: #8babd6;
 }
+
+body { color: red !important; }
+
 /* .ant-select-item-option-active.ant-select-item-option-active:not(
     .ant-select-item-option-disabled
   ) {
