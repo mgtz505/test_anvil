@@ -1,0 +1,702 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* 
+This is an example theme to be used in Anvil.
+You can get 80% of the way there only using the root variables. Any variables that are commented out are supported in Anvil, but not used in this example.
+For more granular control, you can use the anvil-* classes to target specific elements. Some are used here or commented out for reference.
+For a complete list of supported variables and classes, see the white labeling documentation: https://useanvil.com/docs/api/white-labeling/
+ */
+
+:root {
+  /******** root colors - sets defaults for everything else that are overrideable ********/
+  --root-black-color: #222;
+  --root-grey-color: #cccccc87;
+  --root-grey-2-color: #c4c4c4;
+  --root-gray-80-color: #394040;
+  --root-gray-100-color: #1c2222;
+  --root-white-color: #fff;
+  --root-light-white-color: rgb(235, 236, 236);
+  --root-light-black-color: rgb(35, 43, 43);
+  --root-background: var(--root-white-color);
+  --root-text-color: var(--root-black-color);
+  --root-brand-color: var(--root-black-color);
+  --root-brand-color-20: var(--root-gray-80-color);
+  --root-brand-color-10: var(--root-gray-100-color);
+  --root-error-color: #9f1b32;
+  --root-link-color: #0185a2;
+  --root-link-hover-color: #00a298;
+
+  /******** root typography ********/
+  --root-font-family: "Inter var", "Open Sans", "Helvetica Neue", helvetica,
+    arial, sans-serif;
+  /* --root-font-weight: 400; */
+  --root-title-display: none;
+  --root-page-title-underline-display: none;
+
+  /******** backgrounds ********/
+  --webform-background: white;
+  --esign-background: white;
+
+  /******** webform titles ********/
+  --webform-title-font-weight: 500;
+  --webform-title-font-style: normal;
+  --webform-title-font-size: 32px;
+  --webform-page-title-font-weight: 500;
+  --webform-page-title-font-style: normal;
+  --webform-page-title-font-size: 16px;
+
+  /* --webform-title-color: <color-value>; */
+  /* --webform-page-title-underline-color: <color value>; */
+  --webform-page-title-underline-display: none;
+  /* --webform-page-title-color: <color-value>; */
+
+  /******** button ********/
+  --button-border-radius: 8px;
+  --button-disabled-background: #f5f5f5;
+  --button-disabled-color: #d9d9d9;
+  --button-transition: background-color, border-color, box-shadow, color,
+    outline;
+  --button-border: 1px solid var(--root-black-color);
+  --button-border-radius: 8px;
+  --button-color: var(--root-light-white-color);
+  --button-background-color: var(--root-light-black-color);
+  --button-font-weight: 500;
+  --button-font-size: 14px;
+  --button-focus-background: var(--root-brand-color-20);
+  --button-hover-background: var(--root-brand-color-20);
+  /* --button-disabled-icon-color: <color-value>; */
+  /* --button-color: <color-value>; */
+  /* --button-hover-color: <color-value>; */
+  /* --button-hover-background: <color-value>; */
+  /* --button-focus-color: <color-value>; */
+  /* --button-focus-background: <color-value>; */
+
+  /* button-background: The background of the button. Overrides --root-brand-color.
+button-border: The border of the button.
+button-border-color: The border color of the button.
+button-border-radius: The border radius of the button.
+button-color: The color of the button. Overrides --root-white-color.
+button-cursor: The cursor of the button.
+button-disabled-background: The background of the button when disabled.
+button-disabled-border-color: The border color of the button when disabled. Overrides --button-disabled-color.
+button-disabled-color: The color of the button when disabled.
+button-disabled-cursor: The cursor of the button when disabled.
+button-disabled-hover-color: The color of the button when disabled and hovered. Overrides --button-disabled-color.
+button-disabled-icon-color: The color of the icon in the button when disabled. Overrides --button-disabled-color.
+button-disabled-icon-hover-color: The color of the icon in the button when hovered. Overrides --button-disabled-hover-color.
+button-disabled-line-height: The line height of the button when disabled.
+button-disabled-opacity: The opacity of the button when disabled.
+button-focus-background: var(--root-brand-color-20);
+button-focus-border-color: The border color of the button when focused. Overrides --root-brand-color.
+button-focus-color: The color of the button when focused. Overrides --root-white-color.
+button-font-size: The font size of the button.
+
+    font-size: inherit;
+    font-weight: 400;
+button-height: The height of the button.
+button-hover-background: The background of the button when hovered. Overrides --root-brand-color-10.
+button-hover-border-color: The border color of the button when hovered. Overrides --root-brand-color-10.
+button-hover-color: The color of the button when hovered. Overrides --root-white-color.
+button-icon-color: The color of the icon in the button. Overrides --button-color.
+button-icon-hover-color: The color of the icon in the button when hovered. Overrides --button-hover-color.
+button-interacted-background: The background of the button when interacted with, e.g. hover, focus, and active states. Overrides --root-brand-color.
+button-interacted-color: The color of the button when interacted with, e.g. hover, focus, and active states. Overrides --root-white-color.
+button-line-height: The line height of the button.
+button-opacity: The opacity of the button.
+button-transition: The transition property of the button.
+ */
+  /* border-color: rgb(40, 93, 163);
+    box-shadow: rgb(139, 171, 214) 0px 0px 0px 4px */
+  /******** circle icons ********/
+  /* --circle-icon-background: <color-value>; */
+  /* --circle-icon-color: <color-value; */
+  /* --circle-icon-button-background: <color-value>; */
+  /******** checkbox ********/
+  --checkbox-unchecked-border: 1px solid var(--root-grey-2-color);
+  --checkbox-border-radius: 4px;
+  --checkbox-size: 22px;
+  --checkbox-check-hover-border: 1px solid;
+  --checkbox-check-hover-border-color: var(--root-gray-100-color);
+  --checkbox-checked-background: white;
+  --checkbox-checked-border: 1px solid;
+  --checkbox-checked-border-color: var(--root-grey-2-color);
+  /******** fields ********/
+  --field-label-font-weight: 500;
+  --field-label-font-size: 14px;
+  --field-error-box-shadow: none;
+  --field-error-background: transparent;
+
+  /* --field-error-label-background: transparent; */
+  --field-error-text-color: var(root-error-color);
+  --field-error-border-color: 1px solid var(root-error-color);
+  /* --field-label-color: <color-value>; */
+
+  /******** field inputs ********/
+  --field-input-background-color: transparent;
+  --field-input-border: 1px solid var(--root-grey-color);
+  --field-input-border-radius: 4px;
+  --field-input-focus-box-shadow: none;
+  --field-input-padding-x: 10px;
+  --field-input-padding-y: 10px;
+
+  /* --field-input-hover-border-color: <color value>; */
+  /* --field-input-focus-border-color: <color value>; *
+  /* padding-y is not supported right now - use selectors to target elements you want for padding top/bottom */
+
+  /******** dropdown ********/
+  --dropdown-menu-font-weight: 300;
+  --dropdown-menu-style: normal;
+  --dropdown-placeholder-font-style: italic;
+  --dropdown-placeholder-font-weight: 400;
+
+  --dropdown-option-active-background-color: var(--root-grey-color);
+  --dropdown-menu-background-color: var(--root-gray-80-color);
+  /* --dropdown-menu-color: <color-value>; */
+  --dropdown-placeholder-background-color: var(--root-white-color);
+  /* --dropdown-placeholder-color: <color-value>; */
+  --dropdown-placeholder-active-color: var(--root-grey-color);
+
+  /* border: var(--dropdown-option-active-border-color,transparent);
+    background: var(--dropdown-option-active-border-color, ; */
+
+  /******** date picker ********/
+  --date-picker-border: none;
+  --date-picker-today-border-radius: 0;
+  --date-picker-footer-button-font-style: italic;
+  --date-picker-footer-button-font-weight: 500;
+  --date-picker-days-of-week-font-style: italic;
+  --date-picker-days-of-week-font-weight: 600;
+
+  /* --date-picker-footer-button-color: <color-value>; */
+  /* --date-picker-footer-button-hover-color: <color-value>; */
+  /* --date-picker-background: <color-value>; */
+  /* --date-picker-color: <color-value>; */
+  /* --date-picker-hover-background: <color-value>; */
+  /* --date-picker-today-hover-background: <color-value>; */
+  /* --date-picker-today-hover-color: <color-value>; */
+  /* --date-picker-controls-color: <color-value>; */
+  /* --date-picker-controls-hover-color: <color-value>; */
+
+  /******** dropzone ********/
+  /* --dropzone-border: 2px dashed <color-value>; */
+  /* --dropzone-active-border: 2px dashed <color-value>; */
+  /* --dropzone-accept-border: 2px dashed <color-value>; */
+  /* --dropzone-accept-background: <color-value>; */
+  /* --dropzone-reject-border: 2px dashed <color-value>; */
+  /* --dropzone-error-text-color: <color-value>; */
+
+  /******** dropzone supported selectors ********/
+  /* there are more, but these are only on certain drag and drop states */
+  /* they are here for easier reference. you can target anything within the dropzone for these states using these classes */
+  /* - `.anvil-dropzone-drop-active` */
+  /* - `.anvil-dropzone-drop-accept` */
+  /* - `.anvil-dropzone-drop-reject` */
+  /* - `.anvil-dropzone-drop-disabled` */
+
+  /******** loading spinner ********/
+  --loading-spinner-color: white;
+  --loading-spinner-size: 24px;
+  --loading-spinner-thickness: 2px;
+
+  /******** checkboxes ********/
+  /* --checkbox-checked-background: <color-value>; */
+  /* --checkbox-checked-border-color: <color-value>; */
+  /* --checkbox-check-hover-border-color: <color-value>; */
+
+  /* --checkbox-checked-border: 1px solid var(--root-primary-color); */
+  /* --checkbox-border-radius: 50%; */
+
+  /******** radio buttons ********/
+  /* --radio-buttons-selected-background: <color-value>; */
+  /* --radio-buttons-selected-color: <color-value>; */
+  /* --radio-buttons-unselected-background-color: <color-value>; */
+  /* --radio-buttons-unselected-color: <color-value>; */
+
+  /******** content card ********/
+  --content-card-background: transparent;
+  --content-card-box-shadow: none;
+  --content-card-padding: 0;
+  --content-card-margin-bottom: 40px;
+  --content-title-font-size: 20px;
+  --content-title-font-weight: 500;
+
+  /*************************************/
+  /******** webform review page ********/
+  /*************************************/
+
+  /******** review data card ********/
+  --review-data-card-empty-value-required-border-left: none;
+  --review-data-card-empty-value-required-border-bottom: 2px solid
+    var(--root-error-color);
+  --review-data-card-empty-value-font-style: italic;
+  --circle-icon-background: rgb(50, 176, 160);
+  --content-title-font-size: 16px;
+  /* --review-data-card-value-empty-required-hover-color: <color-value>; */
+  /* --review-data-card-value-label-color: <color-value>; */
+  /* --review-data-card-value-label-hover-color: <color-value>; */
+  /* --review-data-card-item-edit-link-color: <color-value>; */
+  /* --review-data-card-empty-value-required-border-color: <color-value>; */
+  /* --review-data-card-edit-button-color: <color-value>; */
+  /* --review-data-card-edit-button-hover-color: <color-value>; */
+}
+
+.anvil-review-data-card.anvil-content-card {
+  margin-bottom: 40px;
+}
+
+.anvil-button-bar:has(#finish-btn) {
+  right: 5%;
+  bottom: 9%;
+}
+.anvil-esign-page,
+.anvil-webform-finish-page,
+.anvil-webform-review-page {
+  font-family: "Inter var", "Open Sans", "Helvetica Neue", helvetica;
+}
+
+.sc-ilJxFg.cyGrpF > #signature-accept-btn {
+  margin-left: 30%;
+}
+
+.ant-form-item-control-input {
+  font-size: 14px;
+}
+.ant-checkbox-wrapper:has(#acceptedTerms) {
+  display: flex;
+}
+
+/* --checkbox-border-radius: 4px;
+--checkbox-size: 16px;
+--checkbox-check-hover-border: 1px solid;
+--checkbox-check-hover-border-color: blue;
+--checkbox-checked-background: red;
+--checkbox-checked-border: 2px solid;
+--checkbox-checked-border-color: var(--root-black-color);
+--checkbox-unchecked-border: 1px solid;
+--checkbox-unchecked-border-color: blue; */
+.ant-checkbox {
+  background-color: var(--root-white-color);
+  outline: none;
+  overflow: hidden;
+  transition: border 80ms ease-out, box-shadow 80ms ease-out;
+  vertical-align: baseline;
+  border-radius: 4px;
+  color: rgb(28, 34, 34);
+  cursor: pointer;
+  display: inline-flex;
+  height: 22px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 22px;
+  width: 22px;
+  user-select: none;
+}
+.hRNtDB .ant-checkbox-inner::after {
+  height: 12px;
+  width: 8px;
+}
+
+.ant-checkbox-inner {
+  border: 1px solid border var(--root-grey-2-color);
+  background-color: var(--root-white-color);
+}
+.ant-checkbox-inner:after {
+  border: none;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner:after {
+  border-color: var(--root-gray-100-color);
+  border-width: 2.4px;
+}
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: rgb(40, 93, 163);
+  box-shadow: rgb(139, 171, 214) 0px 0px 0px 4px;
+}
+/* .ant-checkbox-checked .ant-checkbox-inner:after {
+  border: 3px solid var(--root-grey-2-color);
+} */
+.anvil-webform-page-title {
+  border-bottom: 1px solid var(--root-grey-color);
+  line-height: 28px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+  font-feature-settings: "ss01", "cv05", "cv10", "calt";
+}
+
+.anvil-webform-description {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.forge-page.anvil-webform-page > * {
+  padding: 32px;
+  border: 1px solid var(--root-grey-color);
+  background-color: var(--root-white-color);
+  border-radius: 4px;
+}
+
+.forge-submit .anvil-button {
+  align-items: center;
+  appearance: none;
+  display: inline-flex;
+  padding: 0px 74px;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  transition-duration: 80ms;
+  transition-timing-function: ease-out;
+  white-space: nowrap;
+  min-height: 42px;
+  background-color: var(--root-black-color);
+}
+
+.ant-btn.anvil-webform-save-and-continue-button {
+  align-items: center;
+  appearance: none;
+  display: inline-flex;
+  margin: 0px;
+  transition-duration: 80ms;
+  transition-property: background-color, border-color, box-shadow, color,
+    outline;
+  transition-timing-function: ease-out;
+  white-space: nowrap;
+  background: none;
+  border-radius: 4px;
+  border: none;
+  justify-content: initial;
+  min-height: 0px;
+  padding: 0px;
+  text-align: left;
+  width: auto;
+  color: var(--root-gray-100-color);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+#saveAndContinueButton svg {
+  display: none; /* Hides the SVG icon */
+}
+
+.anvil-button-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.anvil-button-bar > .secondary-button-container {
+  order: 1;
+}
+
+.anvil-button-bar > button {
+  order: 2;
+}
+
+.button-bar:has(.forge-submit.anvil-button) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-bar:has(#finish-btn) {
+  display: flex;
+  justify-content: center;
+}
+
+.anvil-markdown ol {
+  list-style-type: decimal;
+}
+
+.anvil-field-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* we use ant-form-item-has-error to target only error fields. will change to anvil-field-has-error in the future */
+.ant-form-item-has-error
+  .anvil-field-content-container
+  .anvil-field-help-label {
+  order: 2;
+  position: relative;
+  margin-top: 6px;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.anvil-list-input-item .anvil-field-label {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.anvil-field-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  display: inline-block;
+  margin-right: 16px;
+  margin-top: 9px;
+}
+.form-group {
+  display: flex;
+  width: 100%;
+}
+
+.anvil-webform-review-page {
+  padding: 32px;
+  border: 1px solid var(--root-grey-color);
+  background-color: var(--root-white-color);
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+.anvil-webform-review-page .anvil-webform-description {
+  margin-bottom: 30px;
+}
+/* .ant-form-item-control textarea {
+  /* Remove padding for the parent if a textarea is present */
+/* padding: 0;
+  margin: 0;
+} */
+/* .form-group-header > div:only-child:empty {
+
+} */
+/* .ant-form-item-control:has(.ant-input.city),
+.ant-form-item-control:has(.ant-input.zip),
+.ant-form-item-control:has(.ant-select.state) {
+  padding: 0;
+} */
+
+.anvil-address-zip {
+  width: 100% !important;
+}
+
+.anvil-address-state {
+  width: 100% !important;
+}
+
+.label-i-agree .anvil-field-label {
+  padding-left: 15px;
+}
+
+.anvil-review-data-card-edit-button {
+  color: #285da3;
+}
+
+/* .ant-form-item-control:has(.anvil-field-input):not(:has(textarea)), */
+.anvil-field-shorttext .ant-form-item-control,
+.anvil-field-dollar .ant-form-item-control,
+.anvil-field-email .ant-form-item-control,
+.anvil-field-phone .ant-form-item-control,
+/* .anvil-field-intladdress .ant-form-item-control, */
+/* .anvil-field-usaddress .ant-form-item-control, */
+.anvil-field-compoundselect .ant-form-item-control {
+  flex: 0 0 66%;
+  max-width: 66%;
+  padding: calc(16px);
+}
+
+.anvil-button-bar > #review-and-sign-btn {
+  position: relative;
+  justify-content: center;
+}
+.anvil-field-shorttext .form-group-header,
+.anvil-field-dollar .form-group-header,
+.anvil-field-email .form-group-header,
+.anvil-field-phone .form-group-header,
+.anvil-field-intladdress .form-group-header,
+.anvil-field-usaddress .form-group-header,
+.anvil-field-compoundselect .form-group-header {
+  align-items: center;
+  color: #1c2222;
+  font-size: 14px;
+  flex: 0 0 33%;
+  max-width: 33%;
+  padding: calc(16px);
+  justify-content: flex-end;
+}
+.anvil-field-shorttext.ant-form-item,
+.anvil-field-dollar.ant-form-item,
+.anvil-field-email.ant-form-item,
+.anvil-field-intladdress.ant-form-item,
+.anvil-field-phone.ant-form-item,
+.anvil-field-usaddress.ant-form-item,
+.anvil-field-checkbox.ant-form-item,
+.anvil-field-compoundselect.ant-form-item {
+  display: flex;
+  align-items: center;
+}
+
+.label-principal-contact-address {
+  max-width: 100%;
+}
+
+.label-i-agree {
+  gap: 10px;
+}
+.anvil-field-city .ant-form-item-control {
+  padding: 0;
+}
+.anvil-field-usaddress .anvil-field-checkbox.ant-form-item {
+  display: flex;
+}
+/* .anvil-field-compoundselect {
+} */
+
+.anvil-field-checkbox.dwwfap .ant-form-item-label,
+.anvil-field-radiobuttons.dwwfap .ant-form-item-label {
+  text-align: left;
+}
+
+.anvil-field-radiobuttons .anvil-button-bar {
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 10px;
+}
+
+.anvil-field-shorttext.ant-form-item {
+  display: flex;
+  align-items: center;
+}
+
+.ant-form-item {
+  display: flex;
+}
+
+.dwwfap .ant-form-item-label {
+  text-align: right;
+}
+
+.anvil-field-radiobuttons .ant-form-item-control {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ant-form-item.ant-form-item-has-error .form-group-header {
+  padding-bottom: 30px;
+}
+/* .anvil-field-checkbox.ant-form-item {
+  gap: 10px;
+} */
+.anvil-field-checkbox.form-group-has-label .form-group-header {
+  order: 2;
+  max-width: 95%;
+  /* padding-left: 10px; */
+}
+
+.anvil-field-checkbox.form-group-has-label .ant-form-item-control {
+  padding-top: 14px;
+  max-width: 5%;
+  align-self: flex-start;
+}
+
+.anvil-field-checkbox.form-group-no-label .ant-form-item-control {
+  padding-top: 14px;
+  max-width: 100%;
+}
+
+.anvil-field-checkbox .anvil-field-label {
+  font-weight: 400;
+}
+.anvil-field-usaddress > .ant-form-item-control,
+.anvil-field-intladdress > .ant-form-item-control {
+  padding: calc(16px);
+  max-width: 66%;
+}
+
+.anvil-address-state.anvil-field.form-group-state.anvil-field-state {
+  width: 100%;
+}
+
+.anvil-field.form-group-checkbox.form-group-no-label .ant-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hRNtDB > span:not(.ant-checkbox) {
+  max-width: 100%;
+  display: inline-flex;
+  padding-bottom: 3px;
+}
+.sc-ifjxht.fwmdsk {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.ant-form-item-has-error
+  .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input)
+  .ant-select-selector {
+  border-color: var(--root-error-color) !important;
+}
+
+.page-description.forge-page-description.anvil-webform-description {
+  justify-content: flex-start;
+  /* align-items: flex-end; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+strong,
+p strong,
+li strong,
+span strong {
+  font-weight: 500;
+}
+
+.forge-page.anvil-webform-page > * {
+  min-width: 100%;
+}
+
+.jxjWuv strong {
+  font-weight: 500;
+}
+
+div.gBckdf.forge-page.anvil-webform-page,
+.hCrgKR {
+  padding: 0 !important;
+}
+
+.sc-ifjxht.fwmdsk {
+  position: relative;
+  padding-bottom: 5%;
+}
+
+.anvil-loading-spinner {
+  visibility: hidden;
+}
+
+/* .anvil-button-bar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+} */
+.ant-select-item-option-active.ant-select-item-option-active:not(
+    .ant-select-item-option-disabled
+  ) {
+  background-color: white;
+}
+
+.dropdown-placeholder-option.dropdown-placeholder-option.dropdown-placeholder-option {
+  background-color: white;
+}
+.dropdown-placeholder-option:hover {
+  background-color: #8babd6;
+}
+
+.ant-select-item-option-active.ant-select-item-option-active:not(
+    .ant-select-item-option-disabled
+  ) {
+  background-color: #8babd6;
+}
+/* .ant-select-item-option-active.ant-select-item-option-active:not(
+    .ant-select-item-option-disabled
+  ) {
+  background: 
+}
+
+
+
+.ant-select-item-option-active.ant-select-item-option-active:not(.ant-select-item-option-disabled) { */
