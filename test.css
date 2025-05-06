@@ -675,6 +675,9 @@ div.gBckdf.forge-page.anvil-webform-page,
   ) {
   background-color: white;
 }
+ .ant-select-item-option {
+   opacity: 1;
+  }
 
 .dropdown-placeholder-option.dropdown-placeholder-option.dropdown-placeholder-option {
   background-color: white;
