@@ -691,15 +691,12 @@ div.gBckdf.forge-page.anvil-webform-page,
   ) {
   background-color: #8babd6;
 }
-/* Test */
-body { color: red !important; }
 
-/* .ant-select-item-option-active.ant-select-item-option-active:not(
-    .ant-select-item-option-disabled
-  ) {
-  background: 
+.divider {
+border: none;
+border-bottom: 1px solid #ccc;
+background: transparent;
+margin: 16px 0;
+pointer-events: none;
+height: 0;
 }
-
-
-
-.ant-select-item-option-active.ant-select-item-option-active:not(.ant-select-item-option-disabled) { */
