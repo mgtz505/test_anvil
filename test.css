@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* This is the CSS used for styling the embedded document served by Anvil for display in our iframes */
+/* This repository hosts the CSS: https://github.com/mgtz505/test_anvil*/
+/* Deploys via GitHub Pages are made on each commit  */
+
 :root {
   /******** root colors - sets defaults for everything else that are overrideable ********/
   --root-black-color: #1C2222;
