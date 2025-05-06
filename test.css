@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* 
-This is an example theme to be used in Anvil.
-You can get 80% of the way there only using the root variables. Any variables that are commented out are supported in Anvil, but not used in this example.
-For more granular control, you can use the anvil-* classes to target specific elements. Some are used here or commented out for reference.
-For a complete list of supported variables and classes, see the white labeling documentation: https://useanvil.com/docs/api/white-labeling/
- */
-
 :root {
   /******** root colors - sets defaults for everything else that are overrideable ********/
   --root-black-color: #1C2222;
