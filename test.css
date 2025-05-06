@@ -677,6 +677,7 @@ div.gBckdf.forge-page.anvil-webform-page,
 }
  .ant-select-item-option {
    opacity: 1;
+   color: var(--root-black-color);
   }
 
 .dropdown-placeholder-option.dropdown-placeholder-option.dropdown-placeholder-option {
