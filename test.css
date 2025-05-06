@@ -343,8 +343,8 @@ button-transition: The transition property of the button.
   font-size: 14px;
   font-weight: 500;
   justify-content: center;
-  transition-duration: 80ms;
-  transition-timing-function: ease-out;
+/*   transition-duration: 80ms;
+  transition-timing-function: ease-out; */
   white-space: nowrap;
   min-height: 42px;
   background-color: var(--root-black-color);
@@ -355,10 +355,10 @@ button-transition: The transition property of the button.
   appearance: none;
   display: inline-flex;
   margin: 0px;
-  transition-duration: 80ms;
+/*   transition-duration: 80ms;
   transition-property: background-color, border-color, box-shadow, color,
     outline;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-out; */
   white-space: nowrap;
   background: none;
   border-radius: 4px;
