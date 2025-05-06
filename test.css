@@ -9,12 +9,12 @@ For a complete list of supported variables and classes, see the white labeling d
 
 :root {
   /******** root colors - sets defaults for everything else that are overrideable ********/
-  --root-black-color: #222;
-  --root-grey-color: #cccccc87;
-  --root-grey-2-color: #c4c4c4;
+  --root-black-color: #1C2222;
+  --root-grey-color: #F4F4F4;
+  --root-grey-2-color: #EBECEC;
   --root-gray-80-color: #394040;
   --root-gray-100-color: #1c2222;
-  --root-white-color: #fff;
+  --root-white-color: #ffffff;
   --root-light-white-color: rgb(235, 236, 236);
   --root-light-black-color: rgb(35, 43, 43);
   --root-background: var(--root-white-color);
@@ -22,9 +22,9 @@ For a complete list of supported variables and classes, see the white labeling d
   --root-brand-color: var(--root-black-color);
   --root-brand-color-20: var(--root-gray-80-color);
   --root-brand-color-10: var(--root-gray-100-color);
-  --root-error-color: #9f1b32;
-  --root-link-color: #0185a2;
-  --root-link-hover-color: #00a298;
+  --root-error-color: #DA1C3C;
+  --root-link-color: #285DA3;
+  --root-link-hover-color: #1A3E6D;
 
   /******** root typography ********/
   --root-font-family: "Inter var", "Open Sans", "Helvetica Neue", helvetica,
