@@ -131,6 +131,7 @@ button-transition: The transition property of the button.
   /******** field inputs ********/
   --field-input-background-color: transparent;
   --field-input-border: 1px solid var(--root-grey-color);
+  --field-input-border-right: 1px solid var(--root-grey-color);
   --field-input-border-radius: 4px;
   --field-input-focus-box-shadow: none;
   --field-input-padding-x: 10px;
