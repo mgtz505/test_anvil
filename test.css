@@ -348,9 +348,14 @@ button-transition: The transition property of the button.
 /*   transition-duration: 80ms;
   transition-timing-function: ease-out; */
   white-space: nowrap;
-  line-height: 1;
-  min-height: auto;
+/*   line-height: 1; */
+/*   min-height: auto; */
   background-color: var(--root-black-color);
+  height: 30px !important;
+   min-height: 30px !important;
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   line-height: 30px !important;
 }
 
 .ant-btn.anvil-webform-save-and-continue-button {
