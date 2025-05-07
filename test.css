@@ -621,7 +621,7 @@ button-transition: The transition property of the button.
 }
 
  button.ant-btn-lg {
-   min-height: 30px;
+   max-height: 30px;
    line-height: 30px;
    padding-top: 0;
    padding-bottom: 0;
