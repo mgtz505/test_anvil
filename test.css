@@ -348,7 +348,8 @@ button-transition: The transition property of the button.
 /*   transition-duration: 80ms;
   transition-timing-function: ease-out; */
   white-space: nowrap;
-  min-height: 30px;
+  line-height: 1;
+  min-height: auto;
   background-color: var(--root-black-color);
 }
 
