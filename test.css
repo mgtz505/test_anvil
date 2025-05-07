@@ -337,7 +337,7 @@ button-transition: The transition property of the button.
   border-radius: 4px;
 }
 
-.forge-submit .anvil-button {
+.forge-submit .anvil-button .button {
   align-items: center;
   appearance: none;
   display: inline-flex;
