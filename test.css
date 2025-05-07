@@ -620,6 +620,14 @@ button-transition: The transition property of the button.
   align-items: center;
 }
 
+ button.ant-btn-lg {
+   min-height: 30px;
+   line-height: 30px;
+   padding-top: 0;
+   padding-bottom: 0;
+  }
+
+
 .hRNtDB > span:not(.ant-checkbox) {
   max-width: 100%;
   display: inline-flex;
