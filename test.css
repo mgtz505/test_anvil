@@ -137,6 +137,14 @@ button-transition: The transition property of the button.
   --field-input-padding-x: 10px;
   --field-input-padding-y: 10px;
 
+.ant-input {
+  border-right: 1px solid var(--root-grey-color);
+}
+
+.anvil-field-input {
+  border-right: 1px solid var(--root-grey-color);
+}
+  
   /* --field-input-hover-border-color: <color value>; */
   /* --field-input-focus-border-color: <color value>; *
   /* padding-y is not supported right now - use selectors to target elements you want for padding top/bottom */
