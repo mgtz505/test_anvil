@@ -316,7 +316,7 @@ button-transition: The transition property of the button.
 }
 .ant-checkbox-input:focus + .ant-checkbox-inner {
   border-color: rgb(40, 93, 163);
-  box-shadow: rgb(139, 171, 214) 0px 0px 0px 4px;
+/*   box-shadow: rgb(139, 171, 214) 0px 0px 0px 4px; */
   display: inline-block;
   vertical-align: top;
 }
@@ -731,12 +731,12 @@ input.ant-input.anvil-field-input {
    border-width: 3px;  
    border-style: solid;
    border-color: inherit;
-   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2); 
+/*    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);  */
   }
 
 .input {
    border-width: 3px;  
    border-style: solid;
    border-color: inherit;
-   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2); 
+/*    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);  */
   }
